@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.MainPage">
+
+         
+     <StackLayout>
+        <Image x:Name="ImgTitle" Source="Title3.png" VerticalOptions="Center"></Image>
+        
+        <Image x:Name="ImgPlayButton" Source="Play_button1.png" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer x:Name="PlayButton" NumberOfTapsRequired="1" Tapped="PlayButton_OnTapped">
+                    
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+
+    </StackLayout>
+
+</ContentPage>

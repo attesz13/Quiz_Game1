@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.closePage">
+    <ContentPage.BackgroundColor>
+        <Color>Black</Color>
+    </ContentPage.BackgroundColor>
+    
+    <StackLayout>
+
+
+        <Image Source="Home_Button.png" HeightRequest="100">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer x:Name="HomeButton" NumberOfTapsRequired="1" Tapped="HomeButton_OnTapped">
+
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="eyeglass.png" HeightRequest="250"/>
+
+        <Image Source="eredmeny.png" HeightRequest="200"/>
+        
+        <Label 
+               x:Name="score"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="Transparent"
+               TextColor="White"
+               FontSize="60"
+            HeightRequest="100"/>
+
+    </StackLayout>
+    
+
+              
+            
+</ContentPage>

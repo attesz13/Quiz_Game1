@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Game.GamePlay">
+    
+       
+    <ContentPage.Resources>
+        <Style x:Key="B_Style" TargetType="Button">
+            <Setter Property="WidthRequest" Value="350"/>
+            <Setter Property="HeightRequest" Value="150"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="BorderColor" Value="Black"/>
+            <Setter Property="BorderWidth" Value="10"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="BorderRadius" Value="40"/>
+            <Setter Property="HeightRequest" Value="100"/>
+            
+
+
+
+        </Style>
+        <Style x:Key="W_Style" TargetType="Button">
+            <Setter Property="WidthRequest" Value="350"/>
+            <Setter Property="HeightRequest" Value="150"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="BorderColor" Value="Black"/>
+            <Setter Property="BorderWidth" Value="10"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="BorderRadius" Value="100"/>
+            <Setter Property="HeightRequest" Value="100"/>
+
+
+
+
+        </Style>
+    </ContentPage.Resources>
+            
+        
+        
+        <StackLayout>
+            <Grid VerticalOptions="Center" HorizontalOptions="Center" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="130"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="250"/>
+                
+            </Grid.ColumnDefinitions>
+            <Label 
+                   x:Name="helyes"  
+                   BackgroundColor="Transparent" 
+                   FontSize="35" 
+                   TextColor="Black" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"
+                    Grid.Column="0" Grid.Row="0"/>
+            <Label 
+                   x:Name="kerdes"  
+                   BackgroundColor="Transparent" 
+                   FontSize="35" 
+                   TextColor="Black" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"
+                   Grid.Column="1" Grid.Row="0"/>
+                
+            <Button x:Name="Answer_a"   Grid.Column="1" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource B_Style}" Clicked="Answer_a_Tapped"/>
+
+            <Button x:Name="Answer_b"   Grid.Column="1" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource B_Style}" Clicked="Answer_b_Tapped"/>
+
+            <Button x:Name="Answer_c"   Grid.Column="1" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource B_Style}" Clicked="Answer_c_Tapped"/>
+
+            <Button x:Name="Answer_d"   Grid.Column="1" Grid.Row="4" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource B_Style}" Clicked="Answer_d_Tapped"/>
+                
+            <Button x:Name="a" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Text="a" Style="{StaticResource W_Style} "/>
+                
+            <Button x:Name="b" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" Text="b" Style="{StaticResource W_Style} "/>
+
+            <Button x:Name="c" Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" Text="c" Style="{StaticResource W_Style} "/>
+
+            <Button x:Name="d" Grid.Column="0" Grid.Row="4" HorizontalOptions="Center" VerticalOptions="Center" Text="d" Style="{StaticResource W_Style} "/>
+
+        </Grid>
+        </StackLayout>
+    
+    
+</ContentPage>
